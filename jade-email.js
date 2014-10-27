@@ -1,6 +1,6 @@
 var fs = Npm.require('fs');
 var path = Npm.require('path');
-var jade = Meteor.npmRequire('jade');
+var jade = Npm.require('jade');
 
 EmailTemplate = {
    load: function(templatesPath){
