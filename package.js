@@ -1,7 +1,7 @@
 Package.describe({
   name: 'erkkaha:jade-email',
   summary: 'Server side email templates with jade',
-  version: '1.0.0',
+  version: '0.1.1',
   git: 'https://github.com/erkkaha/jade-email.git'
 });
 Npm.depends({jade: "1.7.0", juice: "0.5.0"});

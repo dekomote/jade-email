@@ -3,6 +3,7 @@
 
 ####Installation
 
+meteor add erkkaha:jade-email
 
 ####Usage
 
