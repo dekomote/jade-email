@@ -9,16 +9,21 @@
 ``` javascript
    // Server startup
    Meteor.startup(function(){
-      var path = 'path to your template folder'
+      var path = 'path to your template folder containing foo.jade'
       EmailTemplate.load(path)
    });
 
-   //
+   var emailOptions = {
+      data:{
+         title: 'bar'
+      },
+      inlineCss: true
+   }
 
    Email.send({
       to: to,
       from: from,
       subject: subject,
-      html: EmailTemplate.foo({title:'bar'})
+      html: EmailTemplate.foo(emailOptions)
     });
 ```
