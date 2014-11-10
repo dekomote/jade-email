@@ -17,7 +17,7 @@ Package.onTest(function(api) {
   api.use('tinytest');
   api.use('erkkaha:jade-email');
    
-   api.addFiles(["tests/test.jade", "tests/test.css", "tests/result.html", "tests/result-inline.html"], 'server', {isAsset: true});
+  api.addFiles(["tests/test.jade", "tests/test.css", "tests/result.html", "tests/result-inline.html"], 'server', {isAsset: true});
   api.addFiles('tests/jade-email-tests.js', 'server');
 });
 

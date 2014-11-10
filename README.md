@@ -28,3 +28,17 @@ meteor add erkkaha:jade-email
       html: EmailTemplate.foo(emailOptions)
     });
 ```
+
+####Templates
+
+A good place for templates is in private folder under your app directory. 
+For instance test.jade and test.css in app/private/templates would be mean:
+
+``` javascript
+var path = Npm.require('path')
+// Server startup
+Meteor.startup(function(){
+   EmailTemplate.load(path.resolve('./assets/app/templates'));
+   console.log(EmailTemplate.test({title:'foo'}));
+});
+```
