@@ -19,6 +19,7 @@ EmailTemplate = {
          var func = jade.compileFile(path.join(templatesPath, item), jadeOpts);
 
          EmailTemplate[template] = function(options){
+            options = options || {};
             var html = func.call(this, options.data);
             if(options.inlineCss){
                var inliner = Meteor.wrapAsync(juice.juiceContent)
