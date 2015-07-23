@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'erkkaha:jade-email',
-  summary: 'Server side email templates with jade',
-  version: '0.1.1',
-  git: 'https://github.com/erkkaha/jade-email.git'
+  name: 'dekomote:jade-email',
+  summary: 'Server side email templates with jade for Linux 64bit',
+  version: '0.1.2',
+  git: 'https://github.com/dekomote/jade-email.git'
 });
 Npm.depends({jade: "1.7.0", juice: "0.5.0"});
 
@@ -15,7 +15,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('erkkaha:jade-email');
+  api.use('dekomote:jade-email');
    
   api.addFiles(["tests/test.jade", "tests/test.css", "tests/result.html", "tests/result-inline.html"], 'server', {isAsset: true});
   api.addFiles('tests/jade-email-tests.js', 'server');

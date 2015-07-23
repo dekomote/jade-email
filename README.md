@@ -1,9 +1,12 @@
-#Meteor server side email templates with jade 
+#Meteor server side email templates with jade with multiarch build
+
+This is a fork from https://github.com/erkkaha/jade-email with builds made
+for all arch. The original author hasn't built it on anything except linux 32bit.
 
 
 ####Installation
 
-meteor add erkkaha:jade-email
+meteor add dekomote:jade-email
 
 ####Usage
 
